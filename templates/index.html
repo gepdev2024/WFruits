@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+</head>
+<body>
+    <h1>Image Classifier</h1>
+    <form id="upload-form" action="/predict" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Predict</button>
+    </form>
+    <div id="result"></div>
+    <div id="class-names">
+        <h3>Class Names:</h3>
+        <ul>
+            {% for class_name in class_names %}
+            <li>{{ class_name }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Form submission handler
+            $('#upload-form').submit(function(event) {
+                event.preventDefault();
+                var formData = new FormData($(this)[0]);
+                
+                $.ajax({
+                    url: '/predict',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        // Check if response contains predicted_class and accuracy
+                        if (response.hasOwnProperty('predicted_class') && response.hasOwnProperty('accuracy')) {
+                            $('#result').html(`
+                                <h3>Prediction Result:</h3>
+                                <p>Predicted Class: ${response.predicted_class}</p>
+                                <p>Accuracy: ${response.accuracy.toFixed(4)}</p>
+                            `);
+                        } else {
+                            $('#result').html('<p>Invalid response from server</p>');
+                        }
+                    },
+                    error: function(error) {
+                        console.log(error);
+                        $('#result').html('<p>Error: Failed to make prediction</p>');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
