@@ -8,6 +8,7 @@ const Klasifikasi = () => {
     const [predictedClass, setPredictedClass] = useState(null);
     const [error, setError] = useState(null);
     const [imageUrl, setImageUrl] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -20,8 +21,10 @@ const Klasifikasi = () => {
         const formData = new FormData();
         formData.append('image', selectedFile);
 
+        setLoading(true);
+
         try {
-            const response = await fetch('http://localhost:5000/predict', {
+            const response = await fetch('http://127.0.0.1:5000/predict', {
                 method: 'POST',
                 body: formData,
             });
@@ -41,6 +44,8 @@ const Klasifikasi = () => {
             setError('Failed to make prediction. Please try again.');
             setPredictedClass(null); // Reset predicted class on error
             setImageUrl(null); // Reset image URL on error
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -52,28 +57,29 @@ const Klasifikasi = () => {
         <>
             <Navbar_Me />
             <div>
-                <div className="bg-gray-100 py-12" style={{
+                <div className="bg-gray-100 py-12 mt-16" style={{
                     width: "100%",
                     minHeight: "563px",  // Set a minimum height for the section
-                    backgroundImage: 'url(/images/gambar_klasifikasi.png)',
+                    backgroundImage: 'url(/images/bg-klasifikasi.png)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat'  // Ensure the background doesn't repeat
                 }}>
 
 
-                    <h1 className='font-kanit text-xl text-center text-white' style={{
+                    <h1 className='font-kanit text-2xl mt-12 text-center text-white' style={{
                         textShadow: '1px 1px 2px black, 0 0 25px green, 0 0 5px darkgreen'
                     }}>Persiapkan Gambar Untuk Melakukan Klasifikasi</h1>
 
 
                     {/* FileUpload Component */}
-                    <FileUpload 
-                        handleFileChange={handleFileChange} 
-                        handleSubmit={handleSubmit} 
-                        error={error} 
-                        predictedClass={predictedClass} 
-                        imageUrl={imageUrl} 
+                    <FileUpload
+                        handleFileChange={handleFileChange}
+                        handleSubmit={handleSubmit}
+                        error={error}
+                        predictedClass={predictedClass}
+                        imageUrl={imageUrl}
+                        loading={loading}
                     />
 
                 </div>
