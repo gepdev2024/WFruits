@@ -3,6 +3,7 @@ import Navbar_Me from '../components/navbar_me';
 import Footer from '../components/footer';
 import { Link } from 'react-router-dom';
 
+
 export default function Beranda() {
     return (
         <>
@@ -27,7 +28,6 @@ export default function Beranda() {
                     </div>
                 </div>
             </div>
-
             {/* section 2 */}
             <div className="bg-gray-100 py-12" style={{ height: "95vh" }}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-center">

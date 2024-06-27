@@ -9,14 +9,17 @@ import Informasi from './views/Informasi';
 
 function App() {
   return (
-    <Router>
+    <>
+      <Router>
         <Routes>
           <Route path="/informasi" element={<Informasi />} />
           <Route path="/masukan" element={<Masukan />} />
           <Route path="/input_gambar" element={<Klasifikasi />} />
           <Route path="/" element={<Beranda />} />
         </Routes>
-    </Router>
+      </Router>
+    </>
+
   );
 }
 
