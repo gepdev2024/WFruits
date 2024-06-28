@@ -21,6 +21,10 @@ const contactsFormSchema = z.object({
 
 app.use(express.json());
 
+app.get('/tes', (req,res)=>{
+    res.send("ok")
+})
+
 app.post('/send-message', async (req, res) => {
     try {
         const body = contactsFormSchema.parse(req.body);

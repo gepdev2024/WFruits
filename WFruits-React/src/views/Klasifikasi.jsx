@@ -14,7 +14,7 @@ const Klasifikasi = () => {
         event.preventDefault();
 
         if (!selectedFile) {
-            setError('Please select an image file.');
+            setError('Pilih gambar dahulu!');
             return;
         }
 
@@ -57,9 +57,9 @@ const Klasifikasi = () => {
         <>
             <Navbar_Me />
             <div>
-                <div className="bg-gray-100 py-12 mt-16" style={{
+                <div className="bg-gray-100 py-12 mt-12 sm:mt-16" style={{
                     width: "100%",
-                    minHeight: "563px",  // Set a minimum height for the section
+                    minHeight: "568px",  // Set a minimum height for the section
                     backgroundImage: 'url(/images/bg-klasifikasi.png)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -67,7 +67,7 @@ const Klasifikasi = () => {
                 }}>
 
 
-                    <h1 className='font-kanit text-2xl mt-12 text-center text-white' style={{
+                    <h1 className='font-kanit text-2xl lg:mt-12 text-center text-white' style={{
                         textShadow: '1px 1px 2px black, 0 0 25px green, 0 0 5px darkgreen'
                     }}>Persiapkan Gambar Untuk Melakukan Klasifikasi</h1>
 

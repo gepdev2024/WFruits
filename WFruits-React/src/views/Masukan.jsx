@@ -2,23 +2,24 @@ import React, { useState } from 'react';
 import Navbar_Me from '../components/navbar_me';
 import Footer from '../components/footer';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { Rating } from 'react-simple-star-rating';
+import { motion } from 'framer-motion';
+import 'react-toastify/dist/ReactToastify.css';
 import '../App.css';
 
 export default function Masukan() {
     const [formData, setFormData] = useState({
         nama: '',
         email: '',
-        rating: '', // Rating state as a string
+        rating: '',
         masukan: ''
     });
 
-    const [ratingKey, setRatingKey] = useState(1); // Add key state
+    const [ratingKey, setRatingKey] = useState(1);
 
     const handleRating = (rate) => {
-        let ratingString = ''; // Initialize rating string
-        switch (rate) { // Convert numeric rating to string representation
+        let ratingString = '';
+        switch (rate) {
             case 1:
                 ratingString = 'Buruk';
                 break;
@@ -39,10 +40,10 @@ export default function Masukan() {
         }
         setFormData({
             ...formData,
-            rating: ratingString // Update rating state with the string representation
+            rating: ratingString
         });
 
-        // Increment key to force Rating component to re-render
+        setRatingKey(prevKey => prevKey + 1);
     };
 
     const handleChange = (e) => {
@@ -68,13 +69,11 @@ export default function Masukan() {
                 setFormData({
                     nama: '',
                     email: '',
-                    rating: '', // Reset rating to empty string after successful submission
+                    rating: '',
                     masukan: ''
                 });
 
-                // Reset key to force Rating component to re-render
                 setRatingKey(prevKey => prevKey + 1);
-
                 toast.success('Berhasil dikirim, terimakasih!', {});
             } else {
                 toast.error(result.error || 'Something went wrong!');
@@ -85,33 +84,72 @@ export default function Masukan() {
         }
     };
 
+    const fadeIn = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 }
+    };
+
+    const slideUp = {
+        hidden: { y: 100, opacity: 0 },
+        visible: { y: 0, opacity: 1 }
+    };
+
     return (
         <div>
             <Navbar_Me />
             <div className="bg-gray-100 pt-12 pb-6 h-max" style={{ backgroundImage: 'url(bg-masukan.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                <h1 className='mt-10 text-3xl text-white font-kanit text-center'>Bantu Kami Jadi Lebih Baik 😁</h1>
-                <form className="max-w-sm mx-auto h-fit" onSubmit={handleSubmit}>
+                <motion.h1
+                    initial="hidden"
+                    animate="visible"
+                    variants={fadeIn}
+                    transition={{ duration: 1 }}
+                    className="mt-10 text-3xl text-white font-kanit text-center"
+                >
+                    Bantu Kami Jadi Lebih Baik 😁
+                </motion.h1>
+                <motion.form
+                    initial="hidden"
+                    animate="visible"
+                    variants={slideUp}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className="max-w-sm mx-3 sm:mx-auto h-fit"
+                    onSubmit={handleSubmit}
+                >
                     <div className="mb-5 mt-5">
                         <label htmlFor="nama" className="block mb-2 font-kanit text-2xl font-light text-white dark:text-white">Nama</label>
-                        <input type="text" id="nama" value={formData.nama} onChange={handleChange} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                        <input
+                            type="text"
+                            id="nama"
+                            value={formData.nama}
+                            onChange={handleChange}
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            required
+                        />
                     </div>
                     <div className="mb-5">
                         <label htmlFor="email" className="block mb-2 font-kanit text-2xl font-light text-white dark:text-white">Email</label>
-                        <input type="email" id="email" value={formData.email} onChange={handleChange} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                        <input
+                            type="email"
+                            id="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            required
+                        />
                     </div>
                     <div className="mb-5">
                         <label className="block mb-2 font-kanit text-2xl font-light text-white dark:text-white">Rating</label>
                         <div>
                             <Rating
-                                key={ratingKey} // Use key to force re-render
+                                key={ratingKey}
                                 onClick={handleRating}
-                                ratingValue={formData.rating} // Pass rating state here
-                                size={35} // Adjust size as needed
+                                ratingValue={formData.rating}
+                                size={35}
                                 transition
-                                fillColor='gold' // Change fill color of stars
-                                emptyColor='gray' // Change empty color of stars
-                                className="my-rating" // Add any additional classes here
-                                totalStars={5} // Total number of stars to display
+                                fillColor="gold"
+                                emptyColor="gray"
+                                className="my-rating"
+                                totalStars={5}
                                 showTooltip
                                 tooltipArray={[
                                     'Buruk',
@@ -132,10 +170,22 @@ export default function Masukan() {
                     </div>
                     <div className="mb-5">
                         <label htmlFor="masukan" className="block mb-2 font-kanit text-2xl font-light text-white dark:text-white">Masukan</label>
-                        <textarea id="masukan" value={formData.masukan} onChange={handleChange} rows={5} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                        <textarea
+                            id="masukan"
+                            value={formData.masukan}
+                            onChange={handleChange}
+                            rows={5}
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            required
+                        />
                     </div>
-                    <button type="submit" className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-10 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 text-center">Kirim</button>
-                </form>
+                    <button
+                        type="submit"
+                        className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-10 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 text-center"
+                    >
+                        Kirim
+                    </button>
+                </motion.form>
             </div>
             <Footer />
             <ToastContainer
@@ -149,7 +199,7 @@ export default function Masukan() {
                 draggable
                 pauseOnHover
                 theme="colored"
-                transition:Bounce />
+            />
         </div>
     );
 }
