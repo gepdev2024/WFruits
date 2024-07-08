@@ -89,7 +89,7 @@ const FileUpload = ({ handleFileChange, handleSubmit, error, predictedClass, ima
                                 to={`https://www.google.com/search?q=${encodeURIComponent(predictedClass)}`}
                                 target='_blank'
                             >
-                                <h2 className='font-kanit text-xl text-center text-green-500'>{predictedClass}</h2>
+                                <h2 className='font-kanit text-xl text-center text-green-500'><i>{predictedClass}</i></h2>
                             </Link>
                         )}
                     </div>

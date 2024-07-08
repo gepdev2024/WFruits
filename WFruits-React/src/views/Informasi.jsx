@@ -1,115 +1,119 @@
-import React, { useEffect, useState } from 'react';
-import Navbar_Me from '../components/navbar_me';
-import Footer from '../components/footer';
-import upArrow from '../assets/up-arrow.png';
-import BackToTop from '../components/BackToTop';
+import React from "react";
+import Navbar_Me from "../components/navbar_me";
+import Footer from "../components/footer";
+import BackToTop from "../components/BackToTop";
+import { delay, motion, useInView } from "framer-motion";
 
+export default function Informasi() {
+  const section1Ref = React.useRef(null);
+  const isInViewSection1 = useInView(section1Ref, { triggerOnce: true });
 
-
-const Informasi = () => {
-  const [images, setImages] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  useEffect(() => {
-    const importImages = async () => {
-      const context = await import.meta.glob('/public/daftarBuah/*.jpg');
-      const imageList = Object.keys(context).map((key) => {
-        const name = key.replace('/public/daftarBuah/', '').replace('.jpg', '');
-        return { src: `/daftarBuah/${name}.jpg`, name };
-      });
-      setImages(imageList);
-    };
-
-    importImages();
-  }, []);
-
-  const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
+  // Variants for animation
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 1 } },
   };
 
-  const handleCardClick = (image) => {
-    setSelectedImage(image);
-    setIsModalOpen(true);
+  const listItemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.7 } },
   };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setSelectedImage(null);
-  };
-
-  const filteredImages = images.filter((image) =>
-    image.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
 
   return (
-    <div className="bg-orange-400 flex flex-col min-h-screen px-3 lg:px-0" style={{ backgroundImage: 'url("/images/gambar-informasi.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed', overflow: 'hidden' }}>
+    <div>
       <Navbar_Me />
-      <div className="flex-1 container mx-auto mb-10" >
-        <div className="flex justify-between items-center w-full pt-24 pb-8">
-          <h1 className='text-orange-600 font-kanit font-bold text-center lg:text-3xl'>Daftar Buah Pada Dataset</h1>
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="Cari..."
-              value={searchQuery}
-              onChange={handleSearchChange}
-              className="sm:w-72 px-4 py-2 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:border-green-500"
+      <motion.div
+        ref={section1Ref}
+        className="bg-gray-100 pb-7"
+        style={{
+          backgroundImage: "url(/images/background1.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        initial="hidden"
+        animate={isInViewSection1 ? "visible" : "hidden"}
+        variants={containerVariants}
+      >
+        <div className="lg:max-w-7xl mx-auto px-4 sm:px-6 mt-16 lg:px-8 h-full">
+          <motion.h1
+            className="text-green-700 p-8 font-kanit font-bold text-center mx-auto lg:text-3xl"
+          >
+            Informasi Proses Klasifikasi Gambar
+          </motion.h1>
+          <motion.div
+            className="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg"
+            variants={containerVariants}
+          >
+            <motion.h2 className="text-xl font-bold mb-4" variants={listItemVariants}>
+              Menggunakan Metode ResNET
+            </motion.h2>
+            <ul className="list-disc pl-6">
+              <motion.li className="text-green-700" variants={listItemVariants}>
+                ResNet adalah singkatan dari "Residual Network" yang merupakan
+                arsitektur deep learning yang utamanya digunakan untuk tugas
+                pengenalan gambar.
+              </motion.li>
+              <motion.li className="text-green-700" variants={listItemVariants}>
+                ResNet diperkenalkan oleh Microsoft Research pada tahun 2015 dan
+                memenangkan kompetisi ImageNet, menunjukkan efektivitasnya.
+              </motion.li>
+              <motion.li className="text-green-700" variants={listItemVariants}>
+                Arsitektur ResNet biasanya lebih dalam dibandingkan CNN
+                tradisional, dengan ratusan bahkan ribuan lapisan.
+              </motion.li>
+              <motion.li className="text-green-700" variants={listItemVariants}>
+                Versi ResNet paling populer adalah ResNet-50, ResNet-101, dan
+                ResNet-152, yang masing-masing memiliki 50, 101, dan 152
+                lapisan.
+              </motion.li>
+              <motion.li className="text-green-700" variants={listItemVariants}>
+                Model ResNet menggunakan blok bangunan yang disebut "residual
+                block" yang terdiri dari serangkaian lapisan konvolusi,
+                normalisasi batch, dan fungsi aktivasi.
+              </motion.li>
+              <motion.li className="text-green-700" variants={listItemVariants}>
+                ResNet-50 dan varian serupa secara signifikan meningkatkan
+                akurasi tugas klasifikasi gambar dibandingkan dengan model
+                sebelumnya.
+              </motion.li>
+              <motion.li className="text-green-700" variants={listItemVariants}>
+                Arsitektur ResNet telah menginspirasi pengembangan model deep
+                learning lainnya, seperti DenseNet dan Wide ResNet.
+              </motion.li>
+              <motion.li className="text-green-700" variants={listItemVariants}>
+                ResNet juga telah berhasil diterapkan pada domain lain selain
+                pengenalan gambar, termasuk deteksi objek dan segmentasi
+                semantik.
+              </motion.li>
+              <motion.li className="text-green-700" variants={listItemVariants}>
+                Dampak ResNet pada penelitian deep learning dan aplikasi
+                praktisnya menjadikannya salah satu model deep learning yang
+                paling berpengaruh hingga saat ini.
+              </motion.li>
+            </ul>
+          </motion.div>
+          <motion.div
+            className="bg-white bg-opacity-90 w-1/4 mx-auto mt-7 p-6 rounded-lg shadow-lg"
+            variants={containerVariants}
+          >
+            <motion.h2
+              className="text-xl font-bold mb-4 text-center"
+              variants={listItemVariants}
+            >
+              Flowchart
+            </motion.h2>
+            <motion.img
+              src="/images/flowchart.png"
+              className=""
+              style={{ userSelect: "none" }}
+              alt="image-flowchart"
+              variants={listItemVariants}
             />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              viewBox="0 0 48 48"
-              className="absolute left-3 top-3 h-5 w-5 text-gray-400 pointer-events-none"
-            >
-              <g fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="4">
-                <path d="M21 38c9.389 0 17-7.611 17-17S30.389 4 21 4S4 11.611 4 21s7.611 17 17 17Z" />
-                <path strokeLinecap="round" d="M26.657 14.343A7.975 7.975 0 0 0 21 12a7.975 7.975 0 0 0-5.657 2.343m17.879 18.879l8.485 8.485" />
-              </g>
-            </svg>
-          </div>
+          </motion.div>
         </div>
-
-        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-          {filteredImages.map((image, index) => (
-            <div
-              key={index}
-              onClick={() => handleCardClick(image)}
-              className="hover:shadow-lg transition-transform duration-400 transform hover:scale-110 p-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 cursor-pointer"
-            >
-              <img className="rounded-t-lg mx-auto" src={image.src} alt="" />
-              <div className="">
-                <h5 className="text-center font-bold tracking-tight text-green-800 dark:text-white">
-                  {image.name}
-                </h5>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-      <Footer />
-
-      {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 " onClick={handleCloseModal}>
-          <div className="relative bg-white p-4 rounded-lg shadow-lg transform transition-transform duration-1000 delay-1000 ease-out scale-110 sm:scale-110 w-3/4 max-w-64" onClick={(e) => e.stopPropagation()}>
-            <button onClick={handleCloseModal} className="text-green-900 absolute   top-0 right-0 mr-3 text-5xl">
-              &times;
-            </button>
-            {selectedImage && (
-              <>
-                <img src={selectedImage.src} alt={selectedImage.name} className="mt-2 w-full h-auto" />
-                <h2 className="text-center font-bold text-xl text-green-800">{selectedImage.name}</h2>
-              </>
-            )}
-          </div>
-        </div>
-      )}
+      </motion.div>
       <BackToTop />
+      <Footer />
     </div>
   );
-};
-
-export default Informasi;
+}

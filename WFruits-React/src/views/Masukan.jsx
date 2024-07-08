@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import Navbar_Me from '../components/navbar_me';
 import Footer from '../components/footer';
 import { ToastContainer, toast } from 'react-toastify';
@@ -42,8 +43,6 @@ export default function Masukan() {
             ...formData,
             rating: ratingString
         });
-
-        setRatingKey(prevKey => prevKey + 1);
     };
 
     const handleChange = (e) => {
@@ -56,23 +55,29 @@ export default function Masukan() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:4000/send-message', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
+            const timestamp = new Date().toLocaleDateString('id-ID', {
+                weekday: 'long',
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric'
             });
 
-            const result = await response.json();
-            if (response.ok) {
+            const formDataWithTimestamp = {
+                ...formData,
+                timestamp: timestamp
+            };
+
+            const response = await axios.post('http://localhost:4000/send-message', formDataWithTimestamp);
+            const result = await response.data;
+            if (response.status === 200) {
                 setFormData({
                     nama: '',
                     email: '',
                     rating: '',
                     masukan: ''
                 });
-
                 setRatingKey(prevKey => prevKey + 1);
                 toast.success('Berhasil dikirim, terimakasih!', {});
             } else {
@@ -97,13 +102,13 @@ export default function Masukan() {
     return (
         <div>
             <Navbar_Me />
-            <div className="bg-gray-100 pt-12 pb-6 h-max" style={{ backgroundImage: 'url(bg-masukan.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="bg-gray-100 pt-12 pb-6" style={{ backgroundImage: 'url(bg-masukan.png)', backgroundSize: 'cover', backgroundPosition: 'center', minHeight:'100vh' }}>
                 <motion.h1
                     initial="hidden"
                     animate="visible"
                     variants={fadeIn}
                     transition={{ duration: 1 }}
-                    className="mt-10 text-3xl text-white font-kanit text-center"
+                    className="mt-10 text-3xl text-white font-kanit text-center bg-green-700 py-1"
                 >
                     Bantu Kami Jadi Lebih Baik 😁
                 </motion.h1>

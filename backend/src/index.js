@@ -15,15 +15,12 @@ app.use(cors({
 const contactsFormSchema = z.object({
     nama: z.string().min(1, { message: 'Nama tidak boleh kosong!' }),
     email: z.string().email({ message: 'Email harus valid!' }),
-    rating: z.string().min(1,{ message: 'Rating tidak boleh kosong!' }),
+    rating: z.string().min(1, { message: 'Rating tidak boleh kosong!' }),
     masukan: z.string().min(1, { message: 'Masukan tidak boleh kosong!' }),
+    timestamp: z.string().optional() // Add timestamp as an optional field
 });
 
 app.use(express.json());
-
-app.get('/tes', (req,res)=>{
-    res.send("ok")
-})
 
 app.post('/send-message', async (req, res) => {
     try {
@@ -32,7 +29,7 @@ app.post('/send-message', async (req, res) => {
 
         await sheets.spreadsheets.values.append({
             spreadsheetId: SHEET_ID,
-            range: 'Data!A2:D2',
+            range: 'Data!A2:E2', // Adjust range to include timestamp column
             insertDataOption: 'INSERT_ROWS',
             valueInputOption: 'RAW',
             requestBody: {

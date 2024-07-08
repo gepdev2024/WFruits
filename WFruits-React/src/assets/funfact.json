@@ -1,0 +1,920 @@
+{
+  "Apple Braeburn": {
+    "facts": [
+      "Mengandung banyak serat yang membantu menjaga kesehatan pencernaan.",
+      "Kaya akan vitamin C, yang membantu meningkatkan sistem kekebalan tubuh.",
+      "Braeburn memiliki rasa manis dan sedikit asam, cocok untuk dimakan segar atau digunakan dalam masakan."
+    ]
+  },
+  "Apple Crimson Snow": {
+    "facts": [
+      "Memiliki kulit merah cerah yang menarik dan daging buah yang renyah.",
+      "Mengandung antioksidan yang tinggi, membantu melawan radikal bebas.",
+      "Dikenal karena rasanya yang manis dan sedikit asam, cocok untuk camilan sehat."
+    ]
+  },
+  "Apple Golden 1": {
+    "facts": [
+      "Dikenal dengan kulit kuning cerah dan daging buah yang manis.",
+      "Sering digunakan dalam pembuatan jus dan saus apel.",
+      "Bergizi tinggi dan mengandung serat yang baik untuk pencernaan."
+    ]
+  },
+  "Apple Golden 2": {
+    "facts": [
+      "Memiliki tekstur yang renyah dan rasa manis.",
+      "Banyak digunakan dalam kue dan hidangan panggang.",
+      "Kandungan vitamin C-nya membantu menjaga kesehatan kulit."
+    ]
+  },
+  "Apple Golden 3": {
+    "facts": [
+      "Cocok untuk dimakan segar atau dipanggang.",
+      "Warna kuning emasnya cerah dan menarik.",
+      "Kaya akan antioksidan dan serat, membantu memperkuat sistem kekebalan tubuh."
+    ]
+  },
+    "Apple Granny Smith": {
+      "facts": [
+        "Dikenal dengan kulit hijau cerah dan daging buah yang asam.",
+        "Ideal untuk digunakan dalam salad buah atau pai karena ketahanannya terhadap pemanasan.",
+        "Mengandung vitamin C yang tinggi untuk meningkatkan sistem kekebalan tubuh."
+      ]
+    },
+    "Apple Pink Lady": {
+      "facts": [
+        "Memiliki kulit merah muda cerah dan daging buah yang manis dengan sedikit asam.",
+        "Populer karena rasa yang seimbang dan kelembutan teksturnya.",
+        "Banyak digunakan untuk dimakan segar atau dalam saus dan pai."
+      ]
+    },
+    "Apple Red 1": {
+      "facts": [
+        "Memiliki warna kulit merah cerah dengan daging buah manis dan renyah.",
+        "Sering digunakan dalam pembuatan jus apel dan hidangan manis.",
+        "Kaya akan serat dan antioksidan, baik untuk kesehatan jantung."
+      ]
+    },
+    "Apple Red 2": {
+      "facts": [
+        "Cocok untuk dimakan segar atau dijadikan saus dan pai.",
+        "Warna kulit merah cerah dengan daging buah yang manis.",
+        "Mengandung vitamin C dan flavonoid untuk meningkatkan kesehatan pembuluh darah."
+      ]
+    },
+    "Apple Red 3": {
+      "facts": [
+        "Dikenal dengan kulit merah cerah dan rasa yang manis.",
+        "Baik untuk dimakan segar atau diolah menjadi saus dan jus.",
+        "Kaya akan vitamin C, membantu menjaga kesehatan kulit dan sistem kekebalan tubuh."
+      ]
+    },
+    "Apple Red Delicious": {
+    "facts": [
+      "Dikenal dengan bentuknya yang besar dan kulit merah yang mengkilap.",
+      "Memiliki daging buah yang manis dengan sedikit rasa asam.",
+      "Sering digunakan dalam salad buah atau dimakan segar."
+    ]
+  },
+  "Apple Red Yellow 1": {
+    "facts": [
+      "Kombinasi dari warna kulit merah dan kuning cerah.",
+      "Memiliki rasa manis dan renyah, ideal untuk camilan.",
+      "Kaya akan serat dan vitamin C untuk kesehatan pencernaan dan sistem kekebalan tubuh."
+    ]
+  },
+  "Apple Red Yellow 2": {
+    "facts": [
+      "Memiliki kulit merah dengan bercak kuning dan daging buah manis.",
+      "Banyak digunakan dalam olahan makanan seperti pai dan saus.",
+      "Mengandung antioksidan yang membantu melawan penuaan dini."
+    ]
+  },
+  "Apricot": {
+    "facts": [
+      "Dikenal dengan warna kulit oranye cerah dan daging buah yang manis.",
+      "Sering dimakan segar atau dikeringkan sebagai camilan.",
+      "Kaya akan beta-karoten yang baik untuk kesehatan mata dan kulit."
+    ]
+  },
+  "Avocado ripe": {
+    "facts": [
+      "Avocado matang memiliki daging buah yang lembut dan berwarna hijau kekuningan.",
+      "Kaya akan lemak sehat tak jenuh tunggal, baik untuk jantung.",
+      "Dapat digunakan dalam salad, guacamole, atau dimakan langsung."
+    ]
+  },
+  "Avocado": {
+    "facts": [
+      "Dikenal dengan kulit yang kasar dan daging buah yang lembut dan krimi.",
+      "Kaya akan lemak sehat tak jenuh tunggal, serat, dan vitamin K.",
+      "Baik untuk kesehatan jantung dan pencernaan."
+    ]
+  },
+  "Banana Lady Finger": {
+    "facts": [
+      "Memiliki ukuran lebih kecil dan rasa yang lebih manis dibandingkan varietas pisang lainnya.",
+      "Banyak digunakan dalam pembuatan kue dan camilan.",
+      "Kaya akan kalium, membantu menjaga keseimbangan elektrolit dalam tubuh."
+    ]
+  },
+  "Banana Red": {
+    "facts": [
+      "Pisang dengan kulit berwarna merah dan daging buah kuning.",
+      "Memiliki rasa yang manis dan lembut.",
+      "Kaya akan vitamin dan mineral, seperti vitamin B6 dan magnesium."
+    ]
+  },
+  "Banana": {
+    "facts": [
+      "Pisang adalah sumber energi yang baik karena kandungan karbohidratnya.",
+      "Kaya akan kalium, yang penting untuk fungsi otot dan kesehatan jantung.",
+      "Baik untuk dikonsumsi sebagai camilan sehat atau ditambahkan dalam smoothie."
+    ]
+  },
+  "Beetroot": {
+    "facts": [
+      "Dikenal dengan warna merah yang intens dan rasa manis.",
+      "Sering digunakan dalam salad, jus, atau dimasak sebagai sayuran.",
+      "Kaya akan antioksidan, serat, dan vitamin yang baik untuk kesehatan."
+    ]
+  },
+  "Blueberry": {
+    "facts": [
+      "Dikenal dengan warna biru gelap dan rasa manis yang khas.",
+      "Sering digunakan dalam smoothie, pai, atau dimakan segar.",
+      "Kaya akan antioksidan, seperti vitamin C dan flavonoid."
+    ]
+  },
+  "Cactus fruit": {
+    "facts": [
+      "Juga dikenal sebagai buah nopal atau buah kaktus.",
+      "Memiliki rasa yang manis dan daging buah yang renyah.",
+      "Kaya akan serat, vitamin C, dan mineral, baik untuk kesehatan pencernaan dan kulit."
+    ]
+  },
+  "Cantaloupe 1": {
+    "facts": [
+      "Dikenal dengan kulit yang berwarna kuning dan daging buah yang manis.",
+      "Sering dimakan segar atau digunakan dalam salad buah.",
+      "Kaya akan vitamin A, C, dan kalium, membantu menjaga kesehatan mata dan sistem kekebalan tubuh."
+    ]
+  },
+  "Cantaloupe 2": {
+    "facts": [
+      "Varian cantaloupe dengan kulit yang berwarna hijau.",
+      "Memiliki rasa yang manis dan daging buah yang lembut.",
+      "Sering digunakan dalam berbagai jenis hidangan penutup atau dimakan segar."
+    ]
+  },
+  "Carambola": {
+    "facts": [
+      "Dikenal juga sebagai buah belimbing atau starfruit.",
+      "Memiliki bentuk bintang yang unik dan rasa yang segar.",
+      "Kaya akan vitamin C, serat, dan antioksidan, baik untuk kesehatan jantung dan pencernaan."
+    ]
+  },
+  "Cauliflower": {
+    "facts": [
+      "Sayuran cruciferous yang kaya akan nutrisi.",
+      "Sumber vitamin C, K, dan serat, baik untuk kesehatan tulang dan pencernaan.",
+      "Dapat dimasak dalam berbagai cara, seperti dipanggang, direbus, atau digoreng."
+    ]
+  },
+  "Cherry 1": {
+    "facts": [
+      "Dikenal dengan warna merah cerah dan rasa manis yang intens.",
+      "Sering dimakan segar atau digunakan dalam kue dan pai.",
+      "Kaya akan antioksidan, seperti anthocyanin, yang baik untuk kesehatan jantung."
+    ]
+  },
+  "Cherry 2": {
+    "facts": [
+      "Memiliki warna merah cerah dengan daging buah yang manis.",
+      "Banyak digunakan dalam produksi jus, saus, atau sebagai camilan.",
+      "Kaya akan vitamin C dan serat, membantu meningkatkan sistem pencernaan."
+    ]
+  },
+  "Cherry Rainier": {
+    "facts": [
+      "Cherry dengan kulit kuning dan merah cerah.",
+      "Memiliki rasa manis dan sedikit asam.",
+      "Banyak digunakan dalam pembuatan pai, saus, atau dimakan langsung."
+    ]
+  },
+  "Cherry Wax Black": {
+    "facts": [
+      "Dikenal dengan warna kulit hitam mengkilap dan daging buah yang manis.",
+      "Sering digunakan dalam dekorasi kue dan pai.",
+      "Kaya akan vitamin C dan antioksidan, membantu meningkatkan kesehatan kulit."
+    ]
+  },
+  "Cherry Wax Red": {
+    "facts": [
+      "Dikenal dengan warna merah terang dan daging buah yang manis.",
+      "Sering digunakan dalam pembuatan kue dan pai.",
+      "Kaya akan antioksidan, seperti vitamin C, yang baik untuk kesehatan kulit."
+    ]
+  },
+  "Cherry Wax Yellow": {
+    "facts": [
+      "Memiliki warna kuning cerah dengan daging buah yang manis.",
+      "Sering digunakan dalam dekorasi makanan atau dimakan langsung.",
+      "Kaya akan vitamin C dan mineral, membantu memperkuat sistem kekebalan tubuh."
+    ]
+  },
+  "Chestnut": {
+    "facts": [
+      "Buah dengan kulit keras dan daging buah yang lembut.",
+      "Sering digunakan dalam masakan musim dingin seperti sup atau kue.",
+      "Kaya akan karbohidrat, serat, dan vitamin, baik untuk energi dan pencernaan."
+    ]
+  },
+  "Clementine": {
+    "facts": [
+      "Dikenal dengan kulit yang mudah dipisahkan dan daging buah yang manis.",
+      "Varietas mandarin yang populer sebagai camilan sehat.",
+      "Kaya akan vitamin C, membantu meningkatkan sistem kekebalan tubuh."
+    ]
+  },
+  "Cocos": {
+    "facts": [
+      "Juga dikenal sebagai kelapa.",
+      "Buah tropis dengan air kelapa yang menyegarkan dan daging buah yang kaya akan lemak sehat.",
+      "Baik untuk hidrasi dan sumber energi yang baik."
+    ]
+  },
+  "Corn Husk": {
+    "facts": [
+      "Husk adalah lapisan luar jagung yang melindungi biji jagung.",
+      "Digunakan dalam masakan tradisional untuk membungkus dan memasak jagung.",
+      "Kaya akan serat, membantu pencernaan dan menjaga kesehatan usus."
+    ]
+  },
+  "Corn": {
+    "facts": [
+      "Jagung adalah sumber karbohidrat kompleks yang baik.",
+      "Sering dimasak dan dimakan sebagai sayuran atau digunakan dalam berbagai produk makanan.",
+      "Kaya akan vitamin B, serat, dan antioksidan, baik untuk energi dan kesehatan jantung."
+    ]
+  },
+  "Cucumber Ripe 2": {
+    "facts": [
+      "Timun yang matang memiliki kulit hijau yang cerah dan daging buah yang segar.",
+      "Sering digunakan dalam salad, acar, atau dimakan langsung.",
+      "Kaya akan air, serat, dan vitamin, membantu menjaga hidrasi dan kesehatan kulit."
+    ]
+  },
+  "Cucumber Ripe": {
+    "facts": [
+      "Timun matang memiliki rasa yang lebih manis dan kurangnya rasa pahit.",
+      "Baik untuk dikonsumsi segar atau dijadikan campuran dalam minuman.",
+      "Kaya akan vitamin dan mineral, seperti vitamin K dan kalium."
+    ]
+  },
+  "Dates": {
+    "facts": [
+      "Buah kering yang dikenal dengan rasa manis yang khas.",
+      "Sering dimakan sebagai camilan atau digunakan dalam berbagai hidangan manis.",
+      "Kaya akan energi, serat, dan mineral, seperti zat besi dan magnesium."
+    ]
+  },
+  "Eggplant": {
+    "facts": [
+      "Juga dikenal sebagai terong atau aubergine.",
+      "Buah yang umum digunakan dalam masakan Mediterania dan Asia.",
+      "Kaya akan serat dan antioksidan, baik untuk kesehatan pencernaan dan jantung."
+    ]
+  },
+  "Fig": {
+    "facts": [
+      "Buah dengan kulit lembut dan daging buah manis.",
+      "Sering dimakan segar atau dikeringkan sebagai camilan.",
+      "Kaya akan serat, vitamin, dan mineral, seperti kalium dan magnesium."
+    ]
+  },
+  "Ginger Root": {
+    "facts": [
+      "Akar jahe yang digunakan sebagai rempah-rempah dan obat tradisional.",
+      "Mengandung senyawa antiinflamasi dan antioksidan.",
+      "Baik untuk pencernaan, mengurangi mual, dan meningkatkan sistem kekebalan tubuh."
+    ]
+  },
+  "Granadilla": {
+    "facts": [
+      "Juga dikenal sebagai markisa.",
+      "Buah tropis dengan kulit keras dan biji dalam gelembung lendir.",
+      "Kaya akan vitamin A dan C, serta serat, membantu menjaga kesehatan mata dan kulit."
+    ]
+  },
+  "Grape Blue": {
+    "facts": [
+      "Anggur berwarna biru tua dengan daging buah yang manis.",
+      "Sering dimakan segar atau digunakan untuk membuat jus dan anggur kering.",
+      "Kaya akan antioksidan, seperti resveratrol, yang baik untuk kesehatan jantung."
+    ]
+  },
+  "Grape Pink": {
+    "facts": [
+      "Anggur berwarna merah muda dengan daging buah manis.",
+      "Sering digunakan dalam pembuatan jus dan sebagai camilan.",
+      "Kaya akan vitamin C dan antioksidan, membantu meningkatkan sistem kekebalan tubuh."
+    ]
+  },
+  "Grape White 2": {
+    "facts": [
+      "Anggur berwarna putih dengan daging buah yang manis.",
+      "Sering dimakan segar atau digunakan dalam pembuatan anggur putih.",
+      "Kaya akan vitamin K dan mineral, seperti potassium, baik untuk kesehatan tulang dan jantung."
+    ]
+  },
+  "Grape White 3": {
+    "facts": [
+      "Varietas anggur putih dengan rasa yang manis dan segar.",
+      "Cocok untuk dikonsumsi segar, dibuat jus, atau digunakan dalam salad buah.",
+      "Kaya akan antioksidan, seperti flavonoid, yang mendukung kesehatan jantung."
+    ]
+  },
+  "Grape White 4": {
+    "facts": [
+      "Anggur putih dengan biji kecil dan kulit yang mudah dikupas.",
+      "Sering digunakan dalam hidangan pencuci mulut atau sebagai camilan sehat.",
+      "Kaya akan vitamin C dan serat, membantu menjaga kesehatan pencernaan."
+    ]
+  },
+  "Grape White": {
+    "facts": [
+      "Umumnya mengacu pada anggur putih dalam berbagai varietas.",
+      "Dikenal dengan rasa manis dan segar serta keberagaman penggunaannya.",
+      "Kaya akan vitamin dan mineral, seperti vitamin C dan potassium."
+    ]
+  },
+  "Grapefruit Pink": {
+    "facts": [
+      "Grapefruit dengan daging buah berwarna merah muda atau merah.",
+      "Dikenal dengan rasa manis dan sedikit asam yang menyegarkan.",
+      "Kaya akan vitamin C dan serat, baik untuk pencernaan dan sistem kekebalan tubuh."
+    ]
+  },
+  "Grapefruit White": {
+    "facts": [
+      "Grapefruit dengan daging buah berwarna putih atau kuning pucat.",
+      "Umumnya memiliki rasa yang lebih manis dibandingkan grapefruit merah.",
+      "Kaya akan nutrisi, seperti vitamin A, C, dan serat, membantu menjaga kesehatan kulit dan mata."
+    ]
+  },
+  "Guava": {
+    "facts": [
+      "Buah tropis dengan kulit hijau atau kuning, sering dengan biji dalam daging buah.",
+      "Dikenal dengan rasa manis dan aroma yang khas.",
+      "Kaya akan vitamin C, serat, dan antioksidan, baik untuk sistem pencernaan dan kulit."
+    ]
+  },
+  "Hazelnut": {
+    "facts": [
+      "Kacang dengan cangkang keras dan daging buah yang kaya akan lemak sehat.",
+      "Sering digunakan dalam pembuatan kue, cokelat, atau dimakan langsung.",
+      "Kaya akan vitamin E, magnesium, dan antioksidan, baik untuk kesehatan jantung dan otak."
+    ]
+  },
+  "Huckleberry": {
+    "facts": [
+      "Buah liar dengan warna gelap dan rasa yang manis dengan sentuhan asam.",
+      "Sering digunakan dalam masakan tradisional Amerika dan sebagai camilan.",
+      "Kaya akan antioksidan, seperti vitamin C dan flavonoid, baik untuk kesehatan jantung."
+    ]
+  },
+  "Kaki": {
+    "facts": [
+      "Juga dikenal sebagai persimmon atau buah kaki.",
+      "Buah dengan kulit oranye dan daging buah manis saat matang.",
+      "Kaya akan vitamin A, C, dan serat, baik untuk kesehatan mata dan pencernaan."
+    ]
+  },
+  "Kiwi": {
+    "facts": [
+      "Buah berkulit cokelat dengan daging buah hijau dan biji kecil hitam.",
+      "Dikenal dengan rasa manis dan sedikit asam.",
+      "Kaya akan vitamin C, K, dan serat, membantu meningkatkan sistem kekebalan tubuh dan pencernaan."
+    ]
+  },
+  "Kohlrabi": {
+    "facts": [
+      "Sayuran dengan daging bulat atau lonjong dan daun hijau seperti kubis.",
+      "Sering dimakan mentah atau dimasak dalam berbagai masakan.",
+      "Kaya akan vitamin C, serat, dan mineral, seperti kalium dan fosfor."
+    ]
+  },
+  "Kumquats": {
+    "facts": [
+      "Buah kecil dengan kulit oranye dan daging buah yang asam manis.",
+      "Dimakan secara utuh, termasuk kulitnya yang dapat dimakan.",
+      "Kaya akan vitamin C, serat, dan antioksidan, baik untuk kesehatan pencernaan dan kulit."
+    ]
+  },
+  "Lemon Meyer": {
+    "facts": [
+      "Lemon dengan kulit kuning-oranye yang halus dan daging buah yang sedikit manis.",
+      "Umumnya digunakan dalam masakan dan minuman, baik segar maupun dalam bentuk jus.",
+      "Kaya akan vitamin C dan antioksidan, membantu meningkatkan sistem kekebalan tubuh."
+    ]
+  },
+  "Lemon": {
+    "facts": [
+      "Buah dengan kulit kuning dan daging buah yang asam.",
+      "Sering digunakan sebagai bumbu masakan atau untuk membuat minuman segar.",
+      "Kaya akan vitamin C, membantu meningkatkan sistem kekebalan tubuh."
+    ]
+  },
+  "Limes": {
+    "facts": [
+      "Buah kecil dengan kulit hijau dan daging buah asam.",
+      "Sering digunakan dalam masakan, minuman, atau sebagai hiasan.",
+      "Kaya akan vitamin C, serat, dan antioksidan, baik untuk pencernaan dan kulit."
+    ]
+  },
+  "Lychee": {
+    "facts": [
+      "Buah tropis dengan kulit merah atau merah muda dan daging buah manis.",
+      "Dimakan segar atau digunakan dalam minuman atau hidangan pencuci mulut.",
+      "Kaya akan vitamin C dan B kompleks, serta mineral seperti potassium dan fosfor."
+    ]
+  },
+  "Mandarine": {
+    "facts": [
+      "Buah kecil dengan kulit yang mudah dikupas dan daging buah manis.",
+      "Sering dimakan segar atau digunakan dalam pembuatan jus.",
+      "Kaya akan vitamin C, membantu meningkatkan sistem kekebalan tubuh."
+    ]
+  },
+  "Mango Red": {
+    "facts": [
+      "Mango dengan kulit merah atau oranye dan daging buah manis.",
+      "Umumnya dimakan segar atau digunakan dalam pembuatan jus, salad, atau hidangan pencuci mulut.",
+      "Kaya akan vitamin A, C, dan serat, baik untuk kesehatan mata dan pencernaan."
+    ]
+  },
+  "Mango": {
+    "facts": [
+      "Buah tropis dengan kulit yang bisa berwarna kuning, oranye, atau merah.",
+      "Dikenal dengan rasa manis yang khas dan aroma yang harum.",
+      "Kaya akan vitamin A, C, dan serat, baik untuk kesehatan mata dan pencernaan."
+    ]
+  },
+  "Mangostan": {
+    "facts": [
+      "Buah eksotis dengan kulit ungu gelap yang tebal dan daging buah putih.",
+      "Dikenal dengan rasa manis dan asam yang unik.",
+      "Kaya akan antioksidan, seperti xanthones, yang baik untuk kesehatan jantung dan imunitas."
+    ]
+  },
+  "Maracuja": {
+    "facts": [
+      "Juga dikenal sebagai buah markisa.",
+      "Buah dengan kulit yang keras dan biji dalam gelembung lendir.",
+      "Kaya akan vitamin A, C, dan serat, baik untuk kesehatan mata, kulit, dan pencernaan."
+    ]
+  },
+  "Melon Piel de Sapo": {
+    "facts": [
+      "Melon dengan kulit yang berwarna hijau tua dengan bintik-bintik gelap.",
+      "Dikenal dengan daging buah yang manis dan segar.",
+      "Kaya akan air, vitamin C, dan potasium, membantu menjaga hidrasi dan kesehatan jantung."
+    ]
+  },
+  "Mulberry": {
+    "facts": [
+      "Buah kecil dengan warna ungu atau hitam, mirip dengan raspberry.",
+      "Sering digunakan dalam pembuatan jus, selai, atau dimakan segar.",
+      "Kaya akan vitamin C, K, dan antioksidan, baik untuk kesehatan jantung dan meningkatkan daya tahan tubuh."
+    ]
+  },
+  "Nectarine Flat": {
+    "facts": [
+      "Nektarin dengan bentuk datar dan kulit halus yang bisa berwarna oranye atau merah.",
+      "Dikenal dengan daging buah yang manis dan sedikit asam.",
+      "Kaya akan vitamin C dan A, serta serat, baik untuk kesehatan kulit dan pencernaan."
+    ]
+  },
+  "Nectarine": {
+    "facts": [
+      "Nektarin dengan kulit yang halus dan daging buah yang manis.",
+      "Umumnya dimakan segar atau digunakan dalam salad, jus, atau hidangan pencuci mulut.",
+      "Kaya akan vitamin C dan A, membantu meningkatkan sistem kekebalan tubuh dan kesehatan mata."
+    ]
+  },
+  "Nut Forest": {
+    "facts": [
+      "Kacang dari hutan dengan cangkang keras dan daging buah berlemak.",
+      "Sering digunakan dalam makanan penutup, salad, atau dimakan langsung.",
+      "Kaya akan lemak sehat, protein, dan antioksidan, baik untuk kesehatan jantung dan otak."
+    ]
+  },
+  "Nut Pecan": {
+    "facts": [
+      "Kacang dengan cangkang keras dan daging buah yang manis dan berlemak.",
+      "Sering digunakan dalam kue, pai, atau dimakan langsung.",
+      "Kaya akan vitamin E, magnesium, dan antioksidan, baik untuk kesehatan jantung dan otak."
+    ]
+  },
+  "Onion Red Peeled": {
+    "facts": [
+      "Bawang merah yang sudah dikupas dengan kulit berwarna ungu kecokelatan.",
+      "Digunakan dalam berbagai masakan untuk memberikan rasa dan aroma khas.",
+      "Kaya akan antioksidan dan memiliki sifat anti-inflamasi, baik untuk kesehatan jantung dan pencegahan kanker."
+    ]
+  },
+  "Onion Red": {
+    "facts": [
+      "Bawang merah dengan kulit yang berwarna ungu atau merah kecokelatan.",
+      "Digunakan dalam berbagai masakan untuk memberikan rasa dan aroma khas.",
+      "Kaya akan antioksidan dan memiliki sifat anti-inflamasi, baik untuk kesehatan jantung dan pencegahan kanker."
+    ]
+  },
+  "Onion White": {
+    "facts": [
+      "Bawang putih dengan kulit berwarna putih.",
+      "Digunakan dalam berbagai masakan untuk memberikan rasa yang lebih ringan dan aromatik.",
+      "Kaya akan senyawa belerang yang baik untuk kesehatan jantung dan memiliki sifat antimikroba."
+    ]
+  },
+  "Orange": {
+    "facts": [
+      "Buah dengan kulit berwarna oranye dan daging buah yang manis dan segar.",
+      "Dikenal dengan kandungan tinggi vitamin C yang baik untuk sistem kekebalan tubuh.",
+      "Sering dimakan segar, diperas menjadi jus, atau digunakan dalam berbagai masakan dan minuman."
+    ]
+  },
+  "Papaya": {
+    "facts": [
+      "Buah tropis dengan kulit yang bisa berwarna hijau atau oranye dan daging buah oranye.",
+      "Dikenal dengan rasa manis dan aroma yang khas.",
+      "Kaya akan vitamin C, A, serta enzim pencernaan papain, baik untuk pencernaan dan kesehatan kulit."
+    ]
+  },
+  "Passion Fruit": {
+    "facts": [
+      "Buah dengan kulit keras yang bisa berwarna ungu atau kuning dengan biji di dalamnya.",
+      "Dikenal dengan rasa manis dan asam yang kuat.",
+      "Kaya akan vitamin C, A, dan serat, serta antioksidan, baik untuk kesehatan jantung dan meningkatkan daya tahan tubuh."
+    ]
+  },
+  "Peach 2": {
+    "facts": [
+      "Peach dengan kulit yang bisa berwarna merah atau kuning dan daging buah manis.",
+      "Umumnya dimakan segar atau digunakan dalam berbagai hidangan pencuci mulut.",
+      "Kaya akan vitamin C dan A, serta serat, baik untuk kesehatan kulit dan pencernaan."
+    ]
+  },
+  "Peach Flat": {
+    "facts": [
+      "Peach dengan bentuk yang datar dan kulit yang bisa berwarna merah atau kuning.",
+      "Dikenal dengan daging buah yang manis dan sedikit asam.",
+      "Kaya akan vitamin C dan A, serta serat, baik untuk kesehatan kulit dan pencernaan."
+    ]
+  },
+  "Peach": {
+    "facts": [
+      "Peach dengan kulit yang bisa berwarna merah atau kuning dan daging buah manis.",
+      "Umumnya dimakan segar atau digunakan dalam berbagai hidangan pencuci mulut.",
+      "Kaya akan vitamin C dan A, serta serat, baik untuk kesehatan kulit dan pencernaan."
+    ]
+  },
+  "Pear 2": {
+    "facts": [
+      "Pear dengan kulit hijau atau kuning dan daging buah yang manis dan renyah.",
+      "Umumnya dimakan segar atau digunakan dalam salad, jus, atau diolah menjadi hidangan pencuci mulut.",
+      "Kaya akan serat, vitamin C, K, dan potassium, baik untuk pencernaan dan kesehatan tulang."
+    ]
+  },
+  "Pear Abate": {
+    "facts": [
+      "Pear dengan kulit hijau atau kuning dan daging buah yang manis dan lembut.",
+      "Umumnya dimakan segar atau digunakan dalam salad, jus, atau diolah menjadi hidangan pencuci mulut.",
+      "Kaya akan serat, vitamin C, K, dan potassium, baik untuk pencernaan dan kesehatan tulang."
+    ]
+  },
+  "Pear Forelle": {
+    "facts": [
+      "Pear dengan kulit yang berwarna hijau kekuningan dengan bintik-bintik merah.",
+      "Dikenal dengan rasa manis dan sedikit asam.",
+      "Kaya akan serat, vitamin C, K, dan potassium, baik untuk pencernaan dan kesehatan tulang."
+    ]
+  },
+  "Pear Kaiser": {
+    "facts": [
+      "Pear dengan kulit yang hijau keemasan dan daging buah yang manis dan renyah.",
+      "Umumnya dimakan segar atau digunakan dalam salad, jus, atau diolah menjadi hidangan pencuci mulut.",
+      "Kaya akan serat, vitamin C, K, dan potassium, baik untuk pencernaan dan kesehatan tulang."
+    ]
+  },
+  "Pear Monster": {
+    "facts": [
+      "Pear dengan ukuran yang besar dan kulit yang bisa berwarna hijau atau kuning.",
+      "Dikenal dengan daging buah yang manis dan renyah.",
+      "Kaya akan serat, vitamin C, K, dan potassium, baik untuk pencernaan dan kesehatan tulang."
+    ]
+  },
+  "Pear Red": {
+    "facts": [
+      "Pear dengan kulit yang berwarna merah atau merah kecokelatan.",
+      "Dikenal dengan rasa manis dan sedikit asam.",
+      "Kaya akan serat, vitamin C, K, dan potassium, baik untuk pencernaan dan kesehatan tulang."
+    ]
+  },
+  "Pear Stone": {
+    "facts": [
+      "Pear dengan kulit yang bisa berwarna hijau atau kuning dan daging buah yang manis dan renyah.",
+      "Umumnya dimakan segar atau digunakan dalam salad, jus, atau diolah menjadi hidangan pencuci mulut.",
+      "Kaya akan serat, vitamin C, K, dan potassium, baik untuk pencernaan dan kesehatan tulang."
+    ]
+  },
+  "Pear Williams": {
+    "facts": [
+      "Pear dengan kulit hijau dan daging buah yang manis dan lembut.",
+      "Umumnya dimakan segar atau digunakan dalam salad, jus, atau diolah menjadi hidangan pencuci mulut.",
+      "Kaya akan serat, vitamin C, K, dan potassium, baik untuk pencernaan dan kesehatan tulang."
+    ]
+  },
+  "Pear": {
+    "facts": [
+      "Pear dengan kulit yang bisa berwarna hijau, kuning, merah, atau kombinasi warna lainnya.",
+      "Dikenal dengan rasa manis dan sedikit asam.",
+      "Kaya akan serat, vitamin C, K, dan potassium, baik untuk pencernaan dan kesehatan tulang."
+    ]
+  },
+  "Pepino": {
+    "facts": [
+      "Buah dengan kulit yang berwarna kuning muda atau hijau dan daging buah yang segar dan renyah.",
+      "Dikenal dengan rasa yang segar dan manis, sering dimakan segar atau digunakan dalam salad.",
+      "Kaya akan air dan rendah kalori, baik untuk hidrasi dan menjaga berat badan."
+    ]
+  },
+  "Pepper Green": {
+    "facts": [
+      "Paprika hijau dengan kulit yang cenderung renyah dan daging buah yang manis.",
+      "Umumnya digunakan dalam berbagai masakan untuk memberikan rasa dan warna yang menarik.",
+      "Kaya akan vitamin C dan antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan mata."
+    ]
+  },
+  "Pepper Orange": {
+    "facts": [
+      "Paprika dengan kulit yang berwarna oranye dan daging buah yang manis.",
+      "Sering digunakan dalam berbagai masakan untuk memberikan rasa dan warna yang cerah.",
+      "Kaya akan vitamin C, A, dan antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan mata."
+    ]
+  },
+  "Pepper Red": {
+    "facts": [
+      "Paprika merah dengan kulit yang cenderung renyah dan daging buah yang manis.",
+      "Umumnya digunakan dalam berbagai masakan untuk memberikan rasa dan warna yang menarik.",
+      "Kaya akan vitamin C dan antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan mata."
+    ]
+  },
+  "Pepper Yellow": {
+    "facts": [
+      "Paprika kuning dengan kulit yang cenderung renyah dan daging buah yang manis.",
+      "Umumnya digunakan dalam berbagai masakan untuk memberikan rasa dan warna yang cerah.",
+      "Kaya akan vitamin C, A, dan antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan mata."
+    ]
+  },
+  "Physalis with Husk": {
+    "facts": [
+      "Buah physalis dengan cangkang tipis berwarna kuning keemasan yang melindungi buah di dalamnya.",
+      "Dikenal dengan rasa yang manis dan asam yang unik.",
+      "Kaya akan vitamin C, A, dan antioksidan, serta memiliki sifat antiinflamasi."
+    ]
+  },
+  "Physalis": {
+    "facts": [
+      "Buah physalis dengan cangkang tipis yang bisa berwarna oranye atau merah jambu.",
+      "Dikenal dengan rasa yang manis dan asam yang unik.",
+      "Kaya akan vitamin C, A, dan antioksidan, serta memiliki sifat antiinflamasi."
+    ]
+  },
+  "Pineapple Mini": {
+    "facts": [
+      "Nanas mini dengan kulit yang bisa berwarna kuning keemasan dan daging buah yang manis.",
+      "Umumnya dimakan segar, dipotong menjadi potongan kecil, atau digunakan dalam minuman dan hidangan pencuci mulut.",
+      "Kaya akan vitamin C, enzim pencernaan bromelain, serta antioksidan, baik untuk pencernaan dan sistem kekebalan tubuh."
+    ]
+  },
+  "Pineapple": {
+    "facts": [
+      "Nanas dengan kulit yang bisa berwarna kuning keemasan dan daging buah yang manis.",
+      "Umumnya dimakan segar, dipotong menjadi potongan kecil, atau digunakan dalam minuman dan hidangan pencuci mulut.",
+      "Kaya akan vitamin C, enzim pencernaan bromelain, serta antioksidan, baik untuk pencernaan dan sistem kekebalan tubuh."
+    ]
+  },
+  "Pitahaya Red": {
+    "facts": [
+      "Buah pitaya dengan kulit merah yang menarik dan daging buah yang berwarna putih atau merah muda.",
+      "Dikenal dengan rasa manis dan segar, sering dimakan segar atau digunakan dalam smoothie dan salad.",
+      "Kaya akan vitamin C, serat, dan antioksidan, baik untuk pencernaan dan kesehatan jantung."
+    ]
+  },
+  "Plum 2": {
+    "facts": [
+      "Plum dengan kulit berwarna ungu tua atau merah gelap dan daging buah yang manis.",
+      "Umumnya dimakan segar, dijadikan selai, atau digunakan dalam berbagai hidangan pencuci mulut.",
+      "Kaya akan vitamin C, K, serat, dan antioksidan, baik untuk kesehatan tulang dan sistem pencernaan."
+    ]
+  },
+  "Plum 3": {
+    "facts": [
+      "Plum dengan kulit berwarna ungu tua atau merah gelap dan daging buah yang manis.",
+      "Umumnya dimakan segar, dijadikan selai, atau digunakan dalam berbagai hidangan pencuci mulut.",
+      "Kaya akan vitamin C, K, serat, dan antioksidan, baik untuk kesehatan tulang dan sistem pencernaan."
+    ]
+  },
+  "Plum": {
+    "facts": [
+      "Plum dengan kulit berwarna ungu tua atau merah gelap dan daging buah yang manis.",
+      "Umumnya dimakan segar, dijadikan selai, atau digunakan dalam berbagai hidangan pencuci mulut.",
+      "Kaya akan vitamin C, K, serat, dan antioksidan, baik untuk kesehatan tulang dan sistem pencernaan."
+    ]
+  },
+  "Pomegranate": {
+    "facts": [
+      "Buah delima dengan kulit yang keras dan daging buah yang berwarna merah atau merah kecokelatan.",
+      "Dikenal dengan bijinya yang banyak dan rasa manis asam yang segar.",
+      "Kaya akan vitamin C, K, serat, dan antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan jantung."
+    ]
+  },
+  "Pomelo Sweetie": {
+    "facts": [
+      "Buah pomelo dengan kulit tebal yang bisa berwarna kuning pucat atau hijau muda.",
+      "Dikenal dengan daging buah yang manis dan rasa yang kurang asam dibandingkan grapefruit.",
+      "Kaya akan vitamin C dan serat, baik untuk pencernaan dan menjaga kesehatan kulit."
+    ]
+  },
+  "Potato Red Washed": {
+    "facts": [
+      "Kentang dengan kulit yang merah atau merah kecokelatan setelah dicuci.",
+      "Umumnya digunakan dalam berbagai masakan seperti kentang goreng, sup, atau diolah menjadi kue kentang.",
+      "Kaya akan karbohidrat kompleks, vitamin C, B6, serta mineral seperti potassium dan magnesium."
+    ]
+  },
+  "Potato Red": {
+    "facts": [
+      "Kentang dengan kulit yang merah atau merah kecokelatan.",
+      "Umumnya digunakan dalam berbagai masakan seperti kentang goreng, sup, atau diolah menjadi kue kentang.",
+      "Kaya akan karbohidrat kompleks, vitamin C, B6, serta mineral seperti potassium dan magnesium."
+    ]
+  },
+  "Potato Sweet": {
+    "facts": [
+      "Ubi jalar dengan kulit yang bisa berwarna oranye, ungu, atau putih.",
+      "Umumnya dimakan direbus, panggang, atau digunakan dalam kue dan pai.",
+      "Kaya akan serat, vitamin A, C, B6, serta mineral seperti potassium dan magnesium."
+    ]
+  },
+  "Potato White": {
+    "facts": [
+      "Kentang dengan kulit yang biasanya berwarna putih atau kuning muda.",
+      "Umumnya digunakan dalam berbagai masakan seperti kentang rebus, sup, atau diolah menjadi kue kentang.",
+      "Kaya akan karbohidrat kompleks, vitamin C, B6, serta mineral seperti potassium dan magnesium."
+    ]
+  },
+  "Quince": {
+    "facts": [
+      "Buah kuno dengan kulit kuning atau hijau dan daging buah yang keras.",
+      "Umumnya dimasak atau diolah menjadi selai, sirup, atau minuman.",
+      "Kaya akan serat, vitamin C, serta mineral seperti potassium dan magnesium."
+    ]
+  },
+  "Rambutan": {
+    "facts": [
+      "Buah eksotis dengan kulit berduri merah dan daging buah yang manis dan berair.",
+      "Umumnya dimakan segar atau digunakan dalam berbagai makanan dan minuman.",
+      "Kaya akan vitamin C, serat, dan antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan kulit."
+    ]
+  },
+  "Raspberry": {
+    "facts": [
+      "Buah raspberry dengan warna merah cerah dan rasa yang manis dan sedikit asam.",
+      "Umumnya dimakan segar, dijadikan selai, atau digunakan dalam kue dan pai.",
+      "Kaya akan serat, vitamin C, K, serta antioksidan, baik untuk sistem pencernaan dan kesehatan jantung."
+    ]
+  },
+  "Redcurrant": {
+    "facts": [
+      "Buah redcurrant dengan warna merah cerah dan daging buah yang asam manis.",
+      "Umumnya dimakan segar, dijadikan selai, atau digunakan dalam saus.",
+      "Kaya akan vitamin C, K, serta antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan mata."
+    ]
+  },
+  "Salak": {
+    "facts": [
+      "Buah salak dengan kulit berduri cokelat kecokelatan dan daging buah yang manis dan renyah.",
+      "Umumnya dimakan segar atau digunakan dalam jus dan salad.",
+      "Kaya akan serat, vitamin C, serta mineral seperti potassium dan magnesium."
+    ]
+  },
+  "Strawberry Wedge": {
+    "facts": [
+      "Buah strawberry dengan warna merah cerah dan bentuk yang kecil dan manis.",
+      "Umumnya dimakan segar, dijadikan selai, atau digunakan dalam kue dan pai.",
+      "Kaya akan vitamin C, serat, serta antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan kulit."
+    ]
+  },
+  "Strawberry": {
+    "facts": [
+      "Buah strawberry dengan warna merah cerah dan bentuk yang kecil dan manis.",
+      "Umumnya dimakan segar, dijadikan selai, atau digunakan dalam kue dan pai.",
+      "Kaya akan vitamin C, serat, serta antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan kulit."
+    ]
+  },
+  "Tamarillo": {
+    "facts": [
+      "Buah tamarillo dengan kulit yang bisa berwarna merah atau kuning dan daging buah yang manis dan sedikit asam.",
+      "Umumnya dimakan segar atau digunakan dalam berbagai saus dan kue.",
+      "Kaya akan vitamin A, C, serta serat, baik untuk kesehatan mata dan pencernaan."
+    ]
+  },
+  "Tangelo": {
+    "facts": [
+      "Buah tangelo adalah hibrida antara jeruk dan grapefruit, dengan kulit yang halus dan daging buah yang manis dan asam.",
+      "Umumnya dimakan segar atau dijadikan jus.",
+      "Kaya akan vitamin C, serat, serta antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan kulit."
+    ]
+  },
+  "Tomato 1": {
+    "facts": [
+      "Tomat dengan bentuk dan ukuran yang bervariasi, biasanya memiliki warna merah cerah.",
+      "Umumnya digunakan dalam berbagai masakan seperti salad, saus, atau dimakan segar.",
+      "Kaya akan vitamin C, K, serta antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan tulang."
+    ]
+  },
+  "Tomato 2": {
+    "facts": [
+      "Tomat dengan bentuk dan ukuran yang bervariasi, biasanya memiliki warna merah cerah.",
+      "Umumnya digunakan dalam berbagai masakan seperti salad, saus, atau dimakan segar.",
+      "Kaya akan vitamin C, K, serta antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan tulang."
+    ]
+  },
+  "Tomato 3": {
+    "facts": [
+      "Tomat dengan bentuk dan ukuran yang bervariasi, biasanya memiliki warna merah cerah.",
+      "Umumnya digunakan dalam berbagai masakan seperti salad, saus, atau dimakan segar.",
+      "Kaya akan vitamin C, K, serta antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan tulang."
+    ]
+  },
+  "Tomato 4": {
+    "facts": [
+      "Tomat dengan bentuk dan ukuran yang bervariasi, biasanya memiliki warna merah cerah.",
+      "Umumnya digunakan dalam berbagai masakan seperti salad, saus, atau dimakan segar.",
+      "Kaya akan vitamin C, K, serta antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan tulang."
+    ]
+  },
+  "Tomato Cherry Red": {
+    "facts": [
+      "Tomat cherry dengan warna merah cerah dan bentuk kecil yang manis.",
+      "Umumnya dimakan segar, digunakan dalam salad, atau sebagai hiasan dalam hidangan.",
+      "Kaya akan vitamin C, K, serta antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan kulit."
+    ]
+  },
+  "Tomato Heart": {
+    "facts": [
+      "Tomat dengan bentuk yang mirip hati dan ukuran yang bervariasi.",
+      "Umumnya digunakan dalam berbagai masakan seperti salad atau dimakan segar.",
+      "Kaya akan vitamin C, K, serta antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan tulang."
+    ]
+  },
+  "Tomato Maroon": {
+    "facts": [
+      "Tomat dengan warna marun atau ungu tua, biasanya memiliki rasa yang manis.",
+      "Umumnya digunakan dalam masakan gourmet, saus, atau dimakan segar.",
+      "Kaya akan vitamin C, K, serta antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan tulang."
+    ]
+  },
+  "Tomato Yellow": {
+    "facts": [
+      "Tomat dengan warna kuning cerah dan rasa yang manis.",
+      "Umumnya digunakan dalam berbagai masakan seperti salad, saus, atau dimakan segar.",
+      "Kaya akan vitamin C, K, serta antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan tulang."
+    ]
+  },
+  "Tomato not Ripened": {
+    "facts": [
+      "Tomat yang belum matang sepenuhnya, biasanya berwarna hijau atau kekuningan.",
+      "Umumnya digunakan dalam masakan seperti saus atau diolah menjadi acar.",
+      "Kaya akan vitamin C, K, serta antioksidan, baik untuk sistem kekebalan tubuh dan kesehatan tulang."
+    ]
+  },
+  "Walnut": {
+    "facts": [
+      "Kacang walnut adalah kacang dengan daging keras yang dilindungi oleh cangkang yang sulit.",
+      "Umumnya dimakan segar, digunakan dalam kue, atau diolah menjadi mentega kacang.",
+      "Kaya akan asam lemak omega-3, protein, serat, serta antioksidan, baik untuk kesehatan otak dan jantung."
+    ]
+  },
+  "Watermelon": {
+    "facts": [
+      "Semangka adalah buah besar dengan daging buah merah muda atau merah, dan banyak mengandung air.",
+      "Umumnya dimakan segar sebagai buah penutup atau digunakan dalam jus dan koktail.",
+      "Kaya akan vitamin C, serta mengandung antioksidan dan elektrolit, baik untuk hidrasi dan kesehatan jantung."
+    ]
+  }
+}
+  
