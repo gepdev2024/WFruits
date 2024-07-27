@@ -44,6 +44,8 @@ const DaftarLabel = () => {
   );
 
   return (
+<>
+
     <div
       className="bg-orange-300 flex flex-col min-h-screen px-3 lg:px-0"
       style={{
@@ -57,7 +59,7 @@ const DaftarLabel = () => {
       <Navbar_Me />
       <div className="flex-1 container mx-auto mb-10">
         <div className="flex justify-between items-center w-full pt-24 pb-8">
-          <h1 className="bg-white py-1 px-5 rounded-md text-green-700 font-kanit font-bold text-center lg:text-2xl">
+          <h1 className="bg-white py-3 px-7 rounded-md text-green-700 font-jua font-bold text-center lg:text-2xl">
             Daftar Label Pada Dataset
           </h1>
           <div className="relative">
@@ -66,14 +68,14 @@ const DaftarLabel = () => {
               placeholder="Cari..."
               value={searchQuery}
               onChange={handleSearchChange}
-              className="sm:w-72 px-4 py-2 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:border-green-500"
+              className="sm:w-72 px-4 py-3 pl-10 rounded-lg border border-gray-300 focus:outline-none focus:border-green-500"
             />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
               height="1em"
               viewBox="0 0 48 48"
-              className="absolute left-3 top-3 h-5 w-5 text-gray-400 pointer-events-none"
+              className="absolute left-3 top-4 h-5 w-5 text-gray-400 pointer-events-none"
             >
               <g
                 fill="none"
@@ -97,7 +99,7 @@ const DaftarLabel = () => {
               key={index}
               style={{ userSelect: "none" }}
               onClick={() => handleCardClick(image)}
-              className="hover:shadow-lg transition-transform duration-400 transform hover:scale-110 p-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 cursor-pointer"
+              className="hover:shadow-2xl transition-transform duration-400 transform hover:scale-110 p-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 cursor-pointer"
             >
               <img className="rounded-t-lg mx-auto" src={image.src} alt="" />
               <div className="">
@@ -109,14 +111,12 @@ const DaftarLabel = () => {
           ))}
         </div>
       </div>
-      <Footer />
 
       <AnimatePresence>
         {isModalOpen && (
           <motion.div
             className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50"
                 style={{ userSelect: "none" }}
-
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -155,6 +155,8 @@ const DaftarLabel = () => {
       </AnimatePresence>
       <BackToTop />
     </div>
+      <Footer />
+</>
   );
 };
 

@@ -55,12 +55,12 @@ export default function Beranda() {
               className="lg:w-1/2 flex items-center justify-center h-full"
             >
               <div className="text-center lg:text-left">
-                <h2 className="text-start text-3xl font-extrabold text-green-500 sm:text-4xl font-jua">
+                <h2 className="text-start text-4xl font-extrabold text-green-500 sm:text-4xl font-jua">
                   Apa itu WFruit?
                 </h2>
-                <p className="text-start mt-2 text-lg text-gray-900 font-kanit">
-                  Wfruit adalah website yang menggunakan deep learning untuk
-                  mengklasifikasikan nama dan jenis buah dari gambar. Unggah
+                <p className="text-start mt-2 text-xl text-gray-900 font-kanit">
+                  Wfruits adalah website yang menggunakan deep learning untuk
+                  mengklasifikasikan nama dan jenis buah dari gambar yang diinput. Unggah
                   gambar buah, dan dapatkan informasi lengkap secara instan!
                 </p>
               </div>
@@ -82,22 +82,22 @@ export default function Beranda() {
               className="lg:w-1/2 mt-3 lg:mt-0 flex items-center justify-center lg:h-full"
             >
               <div className="lg:text-left">
-                <h2 className="text-start text-3xl font-extrabold text-green-500 sm:text-4xl font-jua">
+                <h2 className="text-start text-4xl font-extrabold mb-2 text-green-500 sm:text-4xl font-jua">
                   Cara Kerja WFruits
                 </h2>
-                <ul className="text-start text-lg text-gray-900 font-kanit mb-3">
-                  <li className="font-kanit">1. Unggah gambar buah 1 saja</li>
+                <ol className="text-start text-xl text-gray-900 font-kanit mb-6">
+                  <li className="font-kanit">1.&nbsp; Unggah gambar buah 1 saja</li>
                   <li className="font-kanit">
                     2. Aplikasi akan menganalisis gambar
                   </li>
                   <li className="font-kanit">
                     3. Dapatkan hasil nama dan jenis buah beserta <br />
-                    informasi lengkap tentang buah tersebut.
+                    &nbsp; &nbsp; informasi lengkap tentang buah tersebut.
                   </li>
-                </ul>
+                </ol>
                 <Link
                   to="/input_gambar"
-                  className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-10 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 text-center"
+                  className="focus:outline-none font-bold text-white bg-green-600 hover:bg-green-900 focus:ring-4  focus:ring-green-300  rounded-lg text-sm px-10 py-3 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 text-center"
                 >
                   Coba Sekarang
                 </Link>
@@ -166,17 +166,17 @@ export default function Beranda() {
                 x: isInViewSection3 ? 0 : 50,
               }}
               transition={{ duration: 1 }}
-              className="lg:w-1/2 flex items-center lg:ps-10 lg:h-full mt-10"
+              className="lg:w-1/2 flex items-center lg:ps-10 lg:h-full"
             >
               <div className="text-center lg:text-left">
-                <h2 className="text-start text-3xl font-extrabold text-green-500 sm:text-4xl font-jua">
-                  Manfaat Menggunakan Wfruit:
+                <h2 className="text-start text-4xl mb-1 font-extrabold text-green-500 sm:text-4xl font-jua">
+                  Manfaat Menggunakan Wfruit
                 </h2>
-                <ul className="text-start text-lg text-gray-900 font-kanit mb-3">
-                  <li className="font-kanit">- Mudah digunakan</li>
-                  <li className="font-kanit">- Hasil atau proses yang cepat</li>
-                  <li className="font-kanit">
-                    - Mendukung lebih dari 130 jenis buah
+                <ul className="text-start text-xl text-gray-900 font-kanit mb-3">
+                  <li className="font-kanit leading-8">✔️ Mudah digunakan</li>
+                  <li className="font-kanit leading-8">🚀 Hasil atau proses yang cepat</li>
+                  <li className="font-kanit leading-8">
+                  🎢 Mendukung lebih dari 130 jenis buah
                   </li>
                 </ul>
               </div>

@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for your Flask app
 
 # Path to your trained model
-model_path = 'model/your_trained_model.keras'
+model_path = 'model/model_train.keras'
 
 # Load your trained model
 model = load_model(model_path)
@@ -30,7 +30,6 @@ class_names = sorted(os.listdir(train_dir))
 def predict():
     try:
         file = request.files['image']
-        
         # Ensure the 'temp' directory exists
         temp_dir = 'temp'
         if not os.path.exists(temp_dir):

@@ -8,6 +8,7 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras import layers, callbacks
+from tensorflow.keras.models import load_model
 
 # Load dataset
 train_dir = 'dataset_fruits/Training'
@@ -109,13 +110,31 @@ history = model.fit(
     callbacks=[early_stopping]  # Add the EarlyStopping callback to the training process
 )
 
+# Evaluasi model pada dataset uji
+test_dir = 'dataset_fruits/Test'
+test_ds = tf.keras.preprocessing.image_dataset_from_directory(
+    test_dir,
+    batch_size=32,
+    image_size=(100, 100),
+)
+
+test_loss, test_accuracy = model.evaluate(test_ds)
+print(f'Test Loss: {test_loss}')
+print(f'Test Accuracy: {test_accuracy}')
 
 
-from tensorflow.keras.models import load_model
+# Specify the path where you want to save the model
+model_path = 'model/model_train.keras'
+
+try:
+    model.save(model_path)
+    print(f"Model saved successfully at {model_path}")
+except Exception as e:
+    print(f"Error saving model: {e}")
+
 
 # Assuming 'model_path' is correctly defined
-model_path = r'C:\Users\Frans\OneDrive\Desktop\WFruits\model\your_trained_model.h5'
-
+model_path = r'C:\Users\Frans\OneDrive\Desktop\WFruits\backend\model\model_train.keras'
 
 try:
     # Load the saved model using tf.keras
@@ -123,19 +142,3 @@ try:
     print("Model loaded successfully.")
 except Exception as e:
     print(f"Error loading model: {e}")
-
-
-
-
-from tensorflow.keras.models import load_model
-
-# Specify the path where you want to save the model
-model_path = 'model/your_trained_model.keras'
-
-try:
-    # Save the model in native Keras format
-    model.save(model_path)
-    print(f"Model saved successfully at {model_path}")
-except Exception as e:
-    print(f"Error saving model: {e}")
-

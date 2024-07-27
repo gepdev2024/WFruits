@@ -8,6 +8,7 @@ import funfact from "../assets/funfact.json";
 const Klasifikasi = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [predictedClass, setPredictedClass] = useState(null);
+  const [accuracy, setAccuracy] = useState(null);
   const [error, setError] = useState(null);
   const [imageUrl, setImageUrl] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -39,6 +40,7 @@ const Klasifikasi = () => {
       const data = await response.json();
       console.log(data);
       setPredictedClass(data.predicted_class);
+      setAccuracy(data.accuracy);
       setError(null); // Reset error state
       setImageUrl(URL.createObjectURL(selectedFile)); // Set the image URL for display
       setIsModalOpen(true); // Open the modal
@@ -76,7 +78,7 @@ const Klasifikasi = () => {
           }}
         >
           <h1
-            className="font-kanit text-2xl lg:mt-9 text-center text-white"
+            className="font-jua text-2xl lg:mt-9 text-center text-white"
             style={{
               textShadow:
                 "1px 1px 2px black, 0 0 25px green, 0 0 5px darkgreen",
@@ -93,6 +95,7 @@ const Klasifikasi = () => {
             predictedClass={predictedClass}
             imageUrl={imageUrl}
             loading={loading}
+            accuracy={accuracy}
           />
         </div>
         <Footer />
@@ -122,20 +125,29 @@ const Klasifikasi = () => {
               >
                 &times;
               </button>
-              {predictedClass && funfact[predictedClass] && (
+              {predictedClass && funfact[predictedClass]? (
                 <>
-                  <h2 className="text-center font-bold text-xl text-green-800">
-                    Fun Facts Pada Buah <i>{predictedClass}</i>
+                  <h2 className="text-center font- font-bold text-2xl text-green-800">
+                    <i>{accuracy > 0 ? <>Fun Facts Pada Buah  {predictedClass} </> : "Hasil Tidak Diketahui!"} </i>
                   </h2>
-                  <ul className="list-disc ml-5 mt-2">
+                  {accuracy > 0 ? (
+                  <ul className="list-disc ml-5 mt-2 font-">
                     {funfact[predictedClass].facts.map((fact, index) => (
                       <li key={index} className="text-green-800">
                         {fact}
                       </li>
                     ))}
                   </ul>
+                  ):(
+                  <p className="mt-2 text-center text-red-600">
+                    Silahkan upload gambar yang lain!
+                    <br /> Ini disebabkan karena gambar yang diupload kurang
+                    jelas atau buah tersebut tidak tersedia atau tidak didukung.
+                  </p>
+                  )
+                  }
                 </>
-              )}
+              ) :""} 
             </motion.div>
           </motion.div>
         )}
